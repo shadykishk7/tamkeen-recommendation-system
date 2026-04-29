@@ -1,0 +1,65 @@
+seed: 42
+
+users:
+  count: 100
+  disability_distribution:
+    visual: 0.30
+    hearing: 0.20
+    motor: 0.25
+    cognitive: 0.25
+  education_levels: [secondary, diploma, bachelor, postgraduate]
+  activity_tier_distribution:
+    dormant: 0.10
+    casual: 0.40
+    regular: 0.35
+    power: 0.15
+
+courses:
+  count: 50
+  difficulty_distribution: [0.10, 0.20, 0.40, 0.20, 0.10]
+  categories:
+    - programming
+    - soft_skills
+    - business
+    - accessibility
+    - design
+    - data
+    - language
+
+assessments:
+  per_course_mean: 1.5
+  questions_per_assessment_mean: 10
+
+timeline_days: 7
+
+interactions:
+  target_total: 5000
+  event_weights:
+    view_course: 1
+    click_course: 2
+    enroll_course: 5
+    complete_course: 10
+    video_play: 1
+    complete_lesson: 3
+    rate_course: 2
+  session_lambda_by_tier:
+    dormant: 0.2
+    casual: 1.1
+    regular: 2.2
+    power: 3.5
+
+recommendations:
+  exposures_per_user_per_day: 2
+  click_through_rate_target: 0.12
+  top_popularity_boost_fraction: 0.05
+
+embeddings:
+  model: stub
+  reduced_dim: 16
+
+features:
+  version: 1
+  user_update_cadence_days: 1
+  course_update_cadence_days: 1
+
+output_partitioning: true

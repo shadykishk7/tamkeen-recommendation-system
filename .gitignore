@@ -1,0 +1,74 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Backup files
+*.backup
+
+# Large data files (regenerate with scripts)
+out_small/*.csv
+out_small/interactions/*.csv
+out_small/feature_store/*.parquet
+out_small/embeddings/*.npy
+out_small/embeddings/*.json
+out_small/recommendation_exposures/*.csv
+out_small/validation_report.json
+
+# Keep directory structure
+!out_small/.gitkeep
+!out_small/interactions/.gitkeep
+!out_small/feature_store/.gitkeep
+!out_small/embeddings/.gitkeep
+!out_small/recommendation_exposures/.gitkeep
+
+# Node modules (if frontend is expanded)
+node_modules/
+package-lock.json
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# ML models cache (large files)
+.cache/
+huggingface/
