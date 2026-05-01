@@ -140,7 +140,7 @@ pytest tests/ -v
 
 ---
 
-## 👤 Author
+##  Author
 
 **Shady Kishk**
 
@@ -150,13 +150,13 @@ pytest tests/ -v
 
 ---
 
-## 📄 License
+##  License
 
 MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
